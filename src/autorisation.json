@@ -1,0 +1,23 @@
+[
+  {
+    "os": "Ubuntu",
+    "version": ["20.30", "03.20"]
+  },
+
+  {
+    "os": "Windows serveur",
+    "version": [
+      "2022-Datacenter",
+      "2022-datacenter-azure-edition-core",
+      "2019-Datacenter",
+      "2016-Datacenter",
+      "2012-R2-Datacenter",
+      "2012-Datacenter",
+      "2008-R2-SP1"
+    ]
+  },
+  {
+    "os": "Debian",
+    "version": ["20.30", "03.20"]
+  }
+]
