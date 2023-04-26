@@ -2,29 +2,29 @@ import { IoTrashOutline } from "react-icons/io5";
 
 const Card = ({ cards, onDelete, key }) => {
   return (
-    <div className="bg-slate-300 rounded-b-xl">
+    <div key={key} className="bg-slate-300 rounded-b-xl">
       <div className="max-w-sm p-6 bg-white border shadow-sm border-gray-200 rounded-lg  dark:bg-gray-800 dark:border-gray-700">
         <div className="flex justify-between">
           <h5 className="mb-2 text-md font-semibold tracking-tight text-gray-900 dark:text-white">
-            #{key} {cards.name}
+            {key} {cards.name}
           </h5>
           <div>
             <button
               type="button"
               onClick={() => onDelete(cards)}
-              class="text-white mr-5 "
+              className="text-white mr-5 "
             >
               <IoTrashOutline />
             </button>
 
             <button
               type="button"
-              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               <svg
                 aria-hidden="true"
                 role="status"
-                class="inline w-4 h-4  text-white animate-spin"
+                className="inline w-4 h-4  text-white animate-spin"
                 viewBox="0 0 100 101"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -41,11 +41,14 @@ const Card = ({ cards, onDelete, key }) => {
             </button>
           </div>
         </div>
-        <div class="mt-4 text-gray-500 font-bold text-sm">{cards.selectOs}</div>
+        <div className="mt-4 text-gray-500 font-bold text-sm">
+          {cards.nameImage}
+        </div>
+        <div className="mt-1 text-gray-500 font-bold text-sm">{cards.sku}</div>
       </div>
       <div className=" p-3  ">
         <ul>
-          <li>Numero : 423632687503124235</li>
+          <li></li>
         </ul>
       </div>
     </div>
