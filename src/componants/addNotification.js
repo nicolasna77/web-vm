@@ -10,7 +10,7 @@ const Notification = ({ message, onClose }) => {
 
   setTimeout(() => {
     hideNotification();
-  }, 5000);
+  }, 10000);
 
   return (
     <>
