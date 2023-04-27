@@ -24,7 +24,7 @@ const Card = ({ cards, onDelete, key }) => {
         </div>
         <div className="mt-1 text-gray-500 font-bold text-sm">{cards.sku}</div>
       </div>
-      <div className=" p-3  ">
+      <div className=" p-3">
         <ul>
           <li></li>
         </ul>

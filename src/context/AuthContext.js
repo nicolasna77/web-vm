@@ -5,6 +5,7 @@ export const AuthContext = createContext();
 const AuthProvider = ({ children }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [user, setUser] = useState("");
+  
   useEffect(() => {
     const storedUser = JSON.parse(localStorage.getItem("user"));
     if (storedUser) {
@@ -12,6 +13,8 @@ const AuthProvider = ({ children }) => {
       setUser(storedUser);
     }
   }, []);
+
+
   const login = (email, password) => {
     const users = require("../UserCredentials.json").users;
     const user = users.find((user) => user.email === email);
