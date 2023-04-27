@@ -1,11 +1,13 @@
 [
   {
+    "publisher": "Canonical",
     "os": "UbuntuServer",
     "version": ["14.04.3-LTS", "20.04-LTS"]
   },
 
   {
-    "os": "Windows serveur",
+    "publisher": "MicrosoftWindowsServer",
+    "os": "WindowsServeur",
     "version": [
       "2022-Datacenter",
       "2022-datacenter-azure-edition-core",
@@ -15,9 +17,5 @@
       "2012-Datacenter",
       "2008-R2-SP1"
     ]
-  },
-  {
-    "os": "Debian",
-    "version": ["20.30", "03.20"]
   }
 ]

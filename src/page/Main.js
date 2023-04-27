@@ -36,12 +36,8 @@ const Main = () => {
       return await axios
         .post("http://localhost:4000/createVm", request)
         .then((response) => {
-          const temp = cards.push({
-            ...cards,
-            ...newCards,
-            ...response.data,
-          });
-          setCards(temp);
+          setCards([...cards, ...response.data]);
+
           console.log(cards);
           showNotification("votre machine est demarrer");
         });
@@ -180,6 +176,7 @@ const Main = () => {
           Ressources
         </div>
         <div className="grid container m-auto grid-cols-2 p-3 lg:grid-cols-4 gap-5">
+          {console.log(cards)} {console.log(newCards)}
           {cards
             ? cards.map((cards, i) => (
                 <Card cards={cards} onDelete={handleDelete} key={i} />
